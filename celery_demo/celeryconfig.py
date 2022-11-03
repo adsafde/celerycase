@@ -1,6 +1,6 @@
 PASSWORD = ''
-HOST = ''
-BROKER_URL = 'redis://:{}@{}/0'.format(PASSWORD, HOST)
+HOST = 'localhost'
+BROKER_URL = 'redis://:{}@{}/6379/0'.format(PASSWORD, HOST)
 CELERY_RESULT_BACKEND = 'redis://:{}@{}:6379/1'.format(PASSWORD, HOST)
 # 设置时间参照，不设置默认使用的UTC时间
 CELERY_TIMEZONE = 'Asia/Shanghai'
